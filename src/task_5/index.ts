@@ -12,7 +12,7 @@ import { ISecureVaultRequisites, Vault } from "../task_3";
 
 export class BankController {
   private static instance: BankController;
-  private vaultStore: Vault[] = [];
+  private vaultStore: ISecureVaultRequisites[] = [];
 
   public static getInstance(): BankController {
     if (!this.instance) {
